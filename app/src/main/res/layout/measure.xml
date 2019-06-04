@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            style="@style/titlebar"
+            android:text="Measure" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:text="Back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/measureHeight"
+                    style="@style/menu"
+                    android:text="Measure Height" />
+
+                <Button
+                    android:id="@+id/measureLength"
+                    style="@style/menu"
+                    android:text="Measure Length" />
+
+                <Button
+                    android:id="@+id/measure2h"
+                    style="@style/menu"
+                    android:text="Measure From\nTwo Heights" />
+
+                <Button
+                    android:id="@+id/measure2p"
+                    style="@style/menu"
+                    android:text="Measure From\nTwo Positions" />
+
+                <Button
+                    android:id="@+id/measureCamera"
+                    style="@style/menu"
+                    android:text="Measure\nUsing Camera" />
+
+                <Button
+                    android:id="@+id/measureAngle"
+                    style="@style/menu"
+                    android:text="Measure Angle" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

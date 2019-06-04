@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="575dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titlebar"
+            android:layout_alignParentTop="true"
+            android:layout_height="89dp"
+            android:text="Setting Camera Angle\nUsing Object Length"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:layout_below="@id/title"
+            android:text="Back" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/settingLabel"
+            style="@style/measureDisplayLeft"
+            android:text="Length:"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/back"
+            android:layout_marginLeft="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/enterRow"
+            android:layout_below="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp">
+            <EditText
+                android:id="@+id/typeScreen2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:hint="00"
+                android:gravity="right"
+                android:textSize="25sp"
+                android:maxLength="2"
+                android:textColor="#ff0000"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textSize="25sp"
+                android:text="."
+                />
+            <EditText
+                android:id="@+id/typeScreen"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:hint="00"
+                android:gravity="right"
+                android:textSize="25sp"
+                android:maxLength="2"
+                android:textColor="#ff0000"
+                android:inputType="number"/>
+            <Button
+                android:id="@+id/unit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:background="#ff0000"
+                android:textAllCaps="false"
+                android:onClick="changeUnit"
+                />
+        </LinearLayout>
+
+        <TextureView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/enterRow"
+            android:layout_margin="25dp"/>
+
+        <ImageView
+            android:id="@+id/cameraTop"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp"
+            android:scaleY="1"
+            android:layout_below="@id/enterRow"
+            android:src="@drawable/horizontal_marker"/>
+        <ImageView
+            android:id="@+id/cameraBottom"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:scaleY="1"
+            android:layout_below="@id/enterRow"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/horizontal_marker"/>
+        <Button
+            style="@style/press"
+            android:id="@+id/press"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

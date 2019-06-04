@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            style="@style/titlebar"
+            android:text="Measure From\nTwo Heights" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:text="Back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/measure2hFromYou"
+                    style="@style/menu"
+                    android:text="From You" />
+
+                <Button
+                    android:id="@+id/measure2hParallelInside"
+                    style="@style/menu"
+                    android:text="Parallel Inside" />
+
+                <Button
+                    android:id="@+id/measure2hParallelOutside"
+                    style="@style/menu"
+                    android:text="Parallel Outside" />
+
+                <Button
+                    android:id="@+id/measure2hPerpendicularInside"
+                    style="@style/menu"
+                    android:text="Perpendicular Inside" />
+
+                <Button
+                    android:id="@+id/measure2hPerpendicularOutside"
+                    style="@style/menu"
+                    android:text="Perpendicular Outside" />
+
+                <Button
+                    android:id="@+id/measure2hHypotenuse"
+                    style="@style/menu"
+                    android:text="Hypotenuse" />
+
+                <Button
+                    android:id="@+id/measure2hFree"
+                    style="@style/menu"
+                    android:text="Free" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

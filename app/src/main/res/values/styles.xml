@@ -1,0 +1,250 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#0000ff</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:onClick">nextScreen</item>
+    </style>
+
+    <style name="menuNoOnClick">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#0000ff</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="titlebar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="measureDisplay">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="measureDisplayLeft">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="measureDisplayRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="press">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:background">#00ff00</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="instructionsNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="instructionsBold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="formulaTestDegree">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:text">°</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="formulaTestDecimal">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:hint">00</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="formulaTestPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">.</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="formulaTestWhole">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:hint">00</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="formulaTestSign">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:text">  +</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:onClick">plusMinus</item>
+    </style>
+
+    <style name="checklist">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="unit">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">cm</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+    <style name="typeScreen1">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:hint">0</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="typeScreen2">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:hint">00</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="typeScreen3">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:hint">000</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="typeScreen4">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:hint">0000</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="decimalPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:text">.</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="calibrationLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="standardImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_margin">25dp</item>
+    </style>
+
+</resources>

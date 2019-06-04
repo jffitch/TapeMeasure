@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/titlebar"
+                android:layout_alignParentTop="true"
+                android:text="Formula Test"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/back"
+                style="@style/menu"
+                android:layout_below="@id/title"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/checklist"
+                style="@style/menu"
+                android:layout_below="@id/back"
+                android:text="Checklist" />
+
+            <LinearLayout
+                android:id="@+id/calibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checklist"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Eye #1:"/>
+
+                    <EditText
+                        android:id="@+id/eye1Whole"
+                        style="@style/typeScreen3" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/eye1Decimal"
+                        style="@style/typeScreen1" />
+
+                    <TextView
+                        android:id="@+id/unit0"
+                        style="@style/unit" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Eye #2:"/>
+
+                    <EditText
+                        android:id="@+id/eye2Whole"
+                        style="@style/typeScreen3" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/eye2Decimal"
+                        style="@style/typeScreen1" />
+
+                    <TextView
+                        android:id="@+id/unit1"
+                        style="@style/unit" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Stride:"/>
+
+                    <EditText
+                        android:id="@+id/strideWhole"
+                        style="@style/typeScreen3" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/strideDecimal"
+                        style="@style/typeScreen1" />
+
+                    <TextView
+                        android:id="@+id/unit2"
+                        style="@style/unit" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Phone:"/>
+
+                    <EditText
+                        android:id="@+id/phoneWhole"
+                        style="@style/typeScreen2" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/phoneDecimal"
+                        style="@style/typeScreen2" />
+
+                    <TextView
+                        android:id="@+id/unit3"
+                        style="@style/unit" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Offset:"/>
+
+                    <TextView
+                        style="@style/formulaTestSign"
+                        android:id="@+id/offsetSign"/>
+
+                    <EditText
+                        android:id="@+id/offsetWhole"
+                        style="@style/typeScreen2" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/offsetDecimal"
+                        style="@style/typeScreen4" />
+
+                    <TextView
+                        style="@style/formulaTestDegree"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Inc Pitch:"/>
+
+                    <TextView
+                        style="@style/formulaTestSign"
+                        android:id="@+id/inclineSign"/>
+
+                    <EditText
+                        android:id="@+id/inclinePitchWhole"
+                        style="@style/typeScreen2" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/inclinePitchDecimal"
+                        style="@style/typeScreen4" />
+
+                    <TextView
+                        style="@style/formulaTestDegree"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        style="@style/calibrationLabel"
+                        android:text="Inc Yaw:"/>
+
+                    <EditText
+                        android:id="@+id/inclineYawWhole"
+                        style="@style/typeScreen3" />
+
+                    <TextView style="@style/decimalPoint" />
+
+                    <EditText
+                        android:id="@+id/inclineYawDecimal"
+                        style="@style/typeScreen4" />
+
+                    <TextView
+                        style="@style/formulaTestDegree"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/formulaTestSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/calibration"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:id="@+id/measurementRows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formulaTestSpinner"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/step0"
+                    style="@style/measureDisplayLeft"
+                    android:text="Step 0" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch0Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch0Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch0Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch0Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch0Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch0Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch0Point" />
+
+                    <TextView
+                        android:id="@+id/pitch0Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch0Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw0Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw0Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw0Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw0Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw0Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw0Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw0Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step1"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 1" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch1Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch1Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch1Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch1Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch1Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch1Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch1Point" />
+
+                    <TextView
+                        android:id="@+id/pitch1Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch1Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw1Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw1Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw1Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw1Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw1Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw1Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw1Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step2"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 2" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch2Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch2Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch2Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch2Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch2Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch2Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch2Point" />
+
+                    <TextView
+                        android:id="@+id/pitch2Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch2Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw2Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw2Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw2Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw2Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw2Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw2Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw2Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step3"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 3" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch3Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch3Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch3Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch3Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch3Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch3Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch3Point" />
+
+                    <TextView
+                        android:id="@+id/pitch3Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch3Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw3Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw3Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw3Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw3Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw3Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw3Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw3Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step4"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 4" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch4Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch4Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch4Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch4Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch4Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch4Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch4Point" />
+
+                    <TextView
+                        android:id="@+id/pitch4Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch4Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw4Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw4Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw4Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw4Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw4Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw4Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw4Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step5"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 5" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch5Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch5Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch5Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch5Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch5Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch5Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch5Point" />
+
+                    <TextView
+                        android:id="@+id/pitch5Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch5Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw5Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw5Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw5Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw5Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw5Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw5Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw5Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step6"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 6" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch6Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch6Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch6Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch6Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch6Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch6Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch6Point" />
+
+                    <TextView
+                        android:id="@+id/pitch6Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch6Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw6Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw6Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw6Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw6Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw6Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw6Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw6Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/step7"
+                    style="@style/measureDisplayLeft"
+                    android:layout_marginTop="30dp"
+                    android:text="Step 7" />
+
+                <RelativeLayout
+                    android:id="@+id/pitch7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Pitch:" />
+
+                    <TextView
+                        android:id="@+id/pitch7Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/pitch7Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/pitch7Degree" />
+
+                    <TextView
+                        android:id="@+id/pitch7Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/pitch7Decimal" />
+
+                    <EditText
+                        android:id="@+id/pitch7Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/pitch7Point" />
+
+                    <TextView
+                        android:id="@+id/pitch7Sign"
+                        style="@style/formulaTestSign"
+                        android:layout_toLeftOf="@id/pitch7Whole" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yaw7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/measureDisplayLeft"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Yaw:" />
+
+                    <TextView
+                        android:id="@+id/yaw7Degree"
+                        style="@style/formulaTestDegree" />
+
+                    <EditText
+                        android:id="@+id/yaw7Decimal"
+                        style="@style/formulaTestDecimal"
+                        android:layout_toLeftOf="@id/yaw7Degree" />
+
+                    <TextView
+                        android:id="@+id/yaw7Point"
+                        style="@style/formulaTestPoint"
+                        android:layout_toLeftOf="@id/yaw7Decimal" />
+
+                    <EditText
+                        android:id="@+id/yaw7Whole"
+                        style="@style/formulaTestWhole"
+                        android:layout_toLeftOf="@id/yaw7Point"
+                        android:hint="000"
+                        android:maxLength="3" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/measurementRows"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heightlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Height:" />
+
+                <TextView
+                    android:id="@+id/depthlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Depth:" />
+
+                <TextView
+                    android:id="@+id/widthlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Width:" />
+
+                <TextView
+                    android:id="@+id/lengthlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Length:" />
+
+                <TextView
+                    android:id="@+id/slantlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Slant:" />
+
+                <TextView
+                    android:id="@+id/adjlabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Angle Adj:" />
+
+                <TextView
+                    android:id="@+id/anglabel"
+                    style="@style/measureDisplayLeft"
+                    android:text="Angle:" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inchlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/measurementRows"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/inchlabelh"
+                    style="@style/measureDisplay"
+                    android:text="in" />
+
+                <TextView
+                    android:id="@+id/inchlabeld"
+                    style="@style/measureDisplay"
+                    android:text="in" />
+
+                <TextView
+                    android:id="@+id/inchlabelw"
+                    style="@style/measureDisplay"
+                    android:text="in" />
+
+                <TextView
+                    android:id="@+id/inchlabell"
+                    style="@style/measureDisplay"
+                    android:text="in" />
+
+                <TextView
+                    android:id="@+id/inchlabels"
+                    style="@style/measureDisplay"
+                    android:text="in" />
+
+                <TextView
+                    android:id="@+id/anglelabel"
+                    style="@style/measureDisplay"
+                    android:gravity="left"
+                    android:text="°" />
+
+                <TextView
+                    android:id="@+id/angle1label"
+                    style="@style/measureDisplay"
+                    android:gravity="left"
+                    android:text="°" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inchnumber"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/measurementRows"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/inchlabel"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heightinch"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/depthinch"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/widthinch"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/lengthinch"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/slantinch"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/angleadjust"
+                    style="@style/measureDisplayRed"
+                    android:text="0.0000" />
+
+                <TextView
+                    android:id="@+id/anglemeasure"
+                    style="@style/measureDisplayRed"
+                    android:text="0.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/measurementRows"
+                android:layout_marginRight="85dp"
+                android:layout_toLeftOf="@id/inchlabel"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/footlabelh"
+                    style="@style/measureDisplay"
+                    android:text="ft" />
+
+                <TextView
+                    android:id="@+id/footlabeld"
+                    style="@style/measureDisplay"
+                    android:text="ft" />
+
+                <TextView
+                    android:id="@+id/footlabelw"
+                    style="@style/measureDisplay"
+                    android:text="ft" />
+
+                <TextView
+                    android:id="@+id/footlabell"
+                    style="@style/measureDisplay"
+                    android:text="ft" />
+
+                <TextView
+                    android:id="@+id/footlabels"
+                    style="@style/measureDisplay"
+                    android:text="ft" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footnumber"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/measurementRows"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/footlabel"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heightfoot"
+                    style="@style/measureDisplayRed"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/depthfoot"
+                    style="@style/measureDisplayRed"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/widthfoot"
+                    style="@style/measureDisplayRed"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/lengthfoot"
+                    style="@style/measureDisplayRed"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/slantfoot"
+                    style="@style/measureDisplayRed"
+                    android:text="0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@id/inchlabel"
+                android:layout_margin="25dp"
+                android:background="#00ff00"
+                android:onClick="formulaTest"
+                android:text="Calculate"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:id="@+id/fixList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/calculate"
+                android:layout_margin="30dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/removeHeightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove Height"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/removeHeightBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/removeDepthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove Depth"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/removeDepthBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/removeWidthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove Width"
+
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/removeWidthBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/calculate"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="#00ff00"
+                android:onClick="measureFix"
+                android:text="FIX"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titlebar" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:text="Back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/loadSaved"
+                    style="@style/menu"
+                    android:text="Load Saved" />
+
+                <Button
+                    android:id="@+id/eyeEnter"
+                    style="@style/menu"
+                    android:text="Enter Eye Height" />
+
+                <Button
+                    android:id="@+id/eyeHeight"
+                    style="@style/menu"
+                    android:text="Use Object Of\nKnown Height" />
+
+                <Button
+                    android:id="@+id/eyeInside"
+                    style="@style/menu"
+                    android:text="Use Object Of Known\nLength, Inside" />
+
+                <Button
+                    android:id="@+id/eyeOutside"
+                    style="@style/menu"
+                    android:text="Use Object Of Known\nLength, Outside" />
+
+                <Button
+                    android:id="@+id/eyeHypotenuse"
+                    style="@style/menu"
+                    android:text="Use Object Of Known\nLength, Hypotenuse" />
+
+                <Button
+                    android:id="@+id/eyeFree"
+                    style="@style/menu"
+                    android:text="Use Object Of\nKnown Length, Free" />
+
+                <Button
+                    android:id="@+id/eyeYou"
+                    style="@style/menu"
+                    android:text="Use Known\nDistance From You" />
+
+                <Button
+                    android:id="@+id/eye2h"
+                    style="@style/menu"
+                    android:text="Use Two Other\nEye Heights" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

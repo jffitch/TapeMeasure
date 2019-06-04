@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titlebar"
+            android:text="Set Camera Angle"/>
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:text="Back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/cameraEnter"
+                    style="@style/menu"
+                    android:text="Enter Camera Angle" />
+
+                <Button
+                    android:id="@+id/cameraByLength"
+                    style="@style/menu"
+                    android:text="Use Object Of\nKnown Length" />
+
+                <Button
+                    android:id="@+id/cameraByHeight"
+                    style="@style/menu"
+                    android:text="Use Object Of\nKnown Height" />
+
+                <Button
+                    android:id="@+id/cameraByFromYou"
+                    style="@style/menu"
+                    android:text="Use Known\nDistance From You" />
+
+                <Button
+                    android:id="@+id/cameraByLevelSurface"
+                    style="@style/menu"
+                    android:text="Use Level Surface" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

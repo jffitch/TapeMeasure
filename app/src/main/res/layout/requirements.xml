@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="575dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/titlebar"
+                android:text="Requirements" />
+
+            <Button
+                android:id="@+id/close"
+                style="@style/menuNoOnClick"
+                android:text="Back"
+                />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="This screen shows the requirements for each measurement method. Requirements include your position relative to the object, and which values must be calibrated." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Object Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground (ground at your position must be at same altitude as ground at object's position).\nMeasuring vertical object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Object Length Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground.\nMeasuring horizontal object.\nWhen one end of the object is directly in front of you, other end is directly behind you." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Object Length Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground.\nMeasuring horizontal object.\nWhen one end of the object is directly in front of you, other end is directly in front of you." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Object Length Hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground.\nMeasuring horizontal object.\nWhen one end of the object is directly in front of you, other end is directly to your left or right side." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Object Length Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground.\nMeasuring horizontal object.\nMagnetic Sensor functioning accurately (from the Welcome Screen, click Calibrate then Set Precision to see whether the sensor is working)." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Distance From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level ground." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Eye Height: Two Other Eye Heights" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nEye Height #1 and #2 already set." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate Camera Height/Angle: Object Height, Object Length, Distance From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level surface (surface at phone's position must be same altitude as surface at object's position).\nBottom edge of phone on surface." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline (matching incline means ground sloped at an angle equal to the Incline Angle that you set).\nIf incline not set to 0, incline assumed to be your choice of either in direction of object or in direction when incline was set.\nIf using Magnetic Sensor to determine incline direction, Magnetic Sensor functioning accurately.\nMeasuring vertical object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Parallel Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of first point. Second point would have opposite incline.\nWhen one end of the object is directly in front of you, other end is directly behind you.\nIf incline set to 0, measuring horizontal object. If press-and-release on first step, measuring horizontal object. If press-and-hold on first step, measuring object on ground slanted at ground's incline." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Parallel Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of first point. Second point would have same incline.\nWhen one end of the object is directly in front of you, other end is directly in front of you.\nIf incline set to 0, measuring horizontal object. If press-and-release on first step, measuring horizontal object. If press-and-hold on first step, measuring object on ground slanted at ground's incline." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of first point. Second point would have 0 incline.\nWhen one end of the object is directly in front of you, other end is directly to your left or right side.\nIf incline set to 0, measuring horizontal object. If press-and-release on first step, measuring horizontal object. If press-and-hold on first step, measuring object on ground slanted at ground's incline." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction you were facing when you set it.\nIf incline set to 0, measuring horizontal object. If press-and-release on first step, measuring horizontal object. If press-and-hold on first step, measuring object on ground slanted at ground's incline.\nMagnetic Sensor functioning accurately." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Distance From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of point." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Perpendicular Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of perpendicular point.\nWhen facing the object perpendicular to its length, you're facing a point on the object.\nMeasuring horizontal object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Perpendicular Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 set to altitude of eyes relative to ground.\nLevel ground or matching incline.\nIf incline not set to 0, incline in direction of perpendicular point.\nWhen facing the object perpendicular to its length, you're facing a point outside of the object.\nMeasuring horizontal object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Parallel Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nWhen one end of the object is directly in front of you, other end is directly behind you." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Parallel Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nWhen one end of the object is directly in front of you, other end is directly in front of you." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nWhen one end of the object is directly in front of you, other end is directly to your left or right side." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nMagnetic Sensor functioning accurately." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Distance From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Perpendicular Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nWhen facing the object perpendicular to its horizontal length, you're facing a point on the object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Perpendicular Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nDifference between eye heights when measuring equals difference between Eye Height #1 and Eye Height #2.\nWhen facing the object perpendicular to its horizontal length, you're facing a point outside of the object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Parallel" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nTwo positions separated by distance equal to set Stride Distance.\nStride directly toward or away from first point.\nWhen one end of the object is directly in front of you, other end is directly either in front of or behind you.\nEach point must be either in front of you from both positions or behind you from both positions. Changing positions must not cause a point that was in front you to now be behind you, or vice versa." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nTwo positions separated by distance equal to set Stride Distance.\nStride directly toward or away from first point.\nWhen facing the first point, the second point must be directly to either the left or right side of the first point." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nTwo positions separated by distance equal to set Stride Distance.\nMagnetic Sensor functioning accurately." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Object Positions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Full Version purchased.\nEye Height #1 set to eye height relative to ground." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Camera: Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level surface or matching incline.\nIf incline not set to 0, incline in direction camera is facing.\nBottom edge of phone on surface.\nMeasuring vertical object." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Camera: Length" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level surface or matching incline.\nIf incline not set to 0, incline in direction camera is facing.\nBottom edge of phone on surface.\nMeasuring object laying on surface, parallel to direction camera is facing." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Camera: Width" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level surface or matching incline.\nIf incline not set to 0, incline in direction camera is facing.\nBottom edge of phone on surface.\nMeasuring object laying on surface, perpendicular to direction camera is facing." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Camera: Distance From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Level surface or matching incline.\nIf incline not set to 0, incline in direction camera is facing.\nBottom edge of phone on surface." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Angle: Vertical" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Measuring vertical angle." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Angle: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Magnetic Sensor functioning accurately." />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

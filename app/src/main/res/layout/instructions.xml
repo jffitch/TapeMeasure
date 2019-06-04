@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="575dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/titlebar"
+                android:text="Instructions" />
+
+            <Button
+                android:id="@+id/back"
+                style="@style/menu"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/examples2"
+                style="@style/menu"
+                android:text="Examples" />
+
+            <Button
+                android:id="@+id/requirements"
+                style="@style/menu"
+                android:text="Requirements" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In any screen except the Welcome screen, you will see the Back button. Clicking it will return you to the Welcome screen.\n\nClicking the Examples button will show examples of how each measurement method is used.\n\nClicking the Requirements button will show the requirements for each measurement method." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Welcome Screen" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the Welcome screen, you are given five options: Calibrate, Measure, Instructions, Bug Reporting, and Buy Full Version." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Aim" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When measuring (and sometimes when calibrating, if you're setting an Eye Height based on an object size), you'll be told to aim at something. Aiming at something means holding your phone so the screen is in line with the path from your eyes to what you're aiming at. You can hold your phone at any distance away from your eyes." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_without_targets" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="To make sure the measurements are as accurate as possible, hold the phone still until you hear a click." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="This app measures objects by using your preset measurements and the angle that you're holding your phone. This app does not actually know what you are aiming at. Therefore, in order for the measurements to be accurate, you'll have to enter your desired preset measurements." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Precision" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="The values that your phone receives from the sensors have noise, which would cause the measurements to be inaccurate. Precision reduces the noise by changing the value by only a small fraction of the actual difference. Every 1/100 second, the average value changes by the actual difference divided by the Precision. A higher precision means that the values will be more accurate, but you'll have to hold still for a longer period of time. Here is what the Set Precision screen looks like." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/precision_screenshot" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="The Pitch and Yaw values are the values received by the sensors, with Pitch being the vertical angle and Yaw being the compass direction. The Pitch Avg and Yaw Avg values are the values adjusted for the precision, and are the values that will be used in your measurements. The Pitch will be used in all measurements, and the Yaw will be used only in measurements labeled as &quot;Free&quot;.\n\nSometimes when you start the app, the Yaw measurement may not be accurate, so you should always view the Set Precision screen before using measurements that use the magnetic sensors. To fix the Yaw measurement, rotate your phone in random directions. Also, keep your phone away from magnets, as magnets will affect the values that your phone receives from the magnetic sensor.\n\nThe text box is where you enter your desired Precision value. If you click SET next to that, you'll see a preview of how the Pitch Avg and Yaw Avg values change with the entered Precision value.\n\nThe green button at the bottom is the ENTER button. It will usually show instructions for what to do. More information about the ENTER button will be shown further down in the instructions." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Eye Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Eye Height #1 is needed for most measuring methods. Eye Height #2 is needed for measuring from two heights, and is only available in the Full Version.\n\nFor most measuring methods, unless otherwise specified, your eyes will be at a height of Eye Height #1 above the ground. If you're measuring from two heights, you'll first measure from Eye Height #1 then from Eye Height #2.\n\nThere are several ways to set the Eye Heights.\n  - Load Saved: Set the Eye Height to a previously saved value. To delete a value, select it in the drop down menu and click Delete.\n  - Enter: Enter the Eye Height in the text box and press ENTER. If you also enter a name in the Save As text box and the name hasn't been used yet, the value will be saved with that name so it can later be loaded with Load Saved.\n  - Use Object: If you don't know your Eye Height but you know the size of another object, you can do the steps normally done to measure that object in order to calculate your Eye Height. Entering a name in the Save As text box will save the calculated Eye Height as that name.\n\nThere are four common positions used when measuring. They are Inside, Outside, Hypotenuse, and Free. More information about positions is shown further down in the instructions.\n\nCommon eye heights include standing barefoot, standing with shoes, kneeling, sitting, standing on a ladder or stepstool of known height, sitting on a chair of known height, etc."
+                />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Stride Distance" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Stride Distance is needed for measuring from two positions, and is only available in the Full Version. When measuring from two positions, Stride Distance is the distance between the two positions.\n\nYou're given the option of either entering your desired Stride Distance or loading a previously saved value." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Camera Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Camera Height is needed for measuring using your phone's camera. Camera Height is the distance between the bottom of your phone and your phone's camera lens." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_height" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Camera Angle" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Camera Angle is needed for measuring using your phone's camera. Camera Angle is the angle between what's directly in front of your camera and what's shown at the top or bottom of the camera preview on your screen.\n\nYou're given the option of either entering your desired Camera Angle or calculating it by using an object's length or height or by aiming a boundary line at a level surface."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_angle" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Pitch Offset" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="For more accurate measurements, you can attach targets to your phone, like this.\n\nWithout Targets:" />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_without_targets" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="With Targets:" />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_with_targets" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="It's possible that your targets won't be perfectly level, which is where the Pitch Offset is useful. You're given the choice to set the Pitch Offset manually (by entering the value) or automatically (by holding the targets level and having the phone calculate the angle). When setting the Pitch Offset automatically, aim the targets at something the same height as your eyes, such as your eyes in a perfectly vertical mirror.\n\nIf you're not using targets, you should use a Pitch Offset of 0." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Calibrate: Ground Incline" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="If you're measuring something that is not on level ground (the ground you're standing on is not the same altitude as the ground you're aiming at), you can set a Ground Incline angle. This is only available in the Full Version. Be sure to reset this to 0 when you're done using it.\n\nGround Incline is used with Measure Height, Measure Length, and Measure Using Camera. It is not used with Measure From Two Heights or Measure From Two Positions because the ground altitude is irrelevant.\n\nWhen setting a Ground Incline angle, the device will also save the direction you were facing when you set it, which will be known as the Incline Direction. If you have a Ground Incline set when using Measure Height, you'll be asked whether you want the device to assume you're facing the Incline Direction or to use the magnetic sensor to determine what direction you're facing. When using Measure Length: Free, the magnetic sensor will be used to determine what direction you're facing. When using another Measure Length, the device will assume you're facing the Incline Direction for the first step.\n\nIf you plan on using Measure Length: Free or Measure Height: Magnetic Sensor, make sure you are facing the direction of the incline when you set it. Face where the incline is either the highest or the lowest.\n\nWhen using Measure Length: Parallel, Hypotenuse, or Free, if you press and release on the first step, then only the first step (when aiming at the ground) will use the ground incline, and the two object points will be assumed to be the same altitude. If you press and hold for the first step, both object points will be assumed to be on the ground, meaning that they will not be the same altitude if you have the Ground Incline set to something other than 0.\n\nWhen measuring using the camera, the Ground Incline is used as the incline of the surface that the phone and the object are on. The incline is assumed to be in the direction that the camera is facing.\n\nGround Incline is only used when measuring. When calibrating, Ground Incline is assumed to be 0.\n\nIn order to get accurate results, the incline must be uniform. A uniform incline is an otherwise level surface or ground that is just slanted at an angle. A non-uniform incline has random bumps." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="After calibrating, you're ready to measure.\n\nIf you're measuring on level ground or a ground slanted at the calibrated Ground Incline angle, you can use Measure Height or Measure Length. You will first aim at the ground at the object's position before aiming at the object.\n\nIf you're measuring not on level ground and with an unknown Ground Incline angle, you can use Measure From Two Heights or Measure From Two Positions, which are only available in the Full Version." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Positions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Measuring height will not ask your for your position, because it doesn't matter. But if you're measuring length or measuring from two heights or two positions, your position relative to the object will matter. Click on the &quot;Examples&quot; button to see examples of the different measurement methods and positions." />
+
+            <Button
+                android:id="@+id/examples"
+                style="@style/menu"
+                android:text="Examples" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Parallel Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Parallel Inside position when you are directly between the object's end points." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Parallel Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Parallel Outside position when you are facing both of the object's end points." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Perpendicular Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Perpendicular Outside position when if you faced the object perpendicular to its length, you'd be facing a point outside it." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Perpendicular Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Perpendicular Inside position when if you faced the object perpendicular to its length, you'd be facing a point inside it." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Hypotenuse position when you are facing one of the object's end points and the other is directly to your side. In the following photo, the circle shows where you can stand when using the Hypotenuse position." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/hypotenuse_circle" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Free position if you wish to use the magnetic field sensor to determine the direction you're facing. Do not use this if you are near magnets, if you don't trust the accuracy of the Yaw measurement, or if your phone does not have a magnetic field sensor." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the From You position when you are at one of the object's end points and you're measuring to the other end point." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Positions: Object Positions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Object Positions position when the two positions you're measuring from are the object's end points. Unlike most methods of measuring from two positions, this one uses Eye Height #1 and does not use Stride Distance.\n\nYou can also use this option if you are trying to measure the height of a vertical object. One of the positions will be the object's position, and the other will be another point known as the Spectator Position. If you're doing that, just click Remove Depth after measuring." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Using Camera" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When measuring using the camera, you aim using boundary lines on your phone instead of aiming using the path from your eyes to the object.\n\nYou cannot move the boundary lines when calibrating, but you can move them when measuring by touching and dragging them.\n\nYou are given the choice of height, width, length, and distance from you, which can be chosen from a drop down menu.\n\nWhen measuring using the camera, instead of pressing a button to calculate the measurement, the measurement is calculated automatically.\n\nWhen measuring using the camera, always make sure the bottom of your phone is at the same altitude as the object you're measuring (or if you have a Ground Incline angle set, then the bottom of the camera and the object should both be on a surface matching that incline angle).\n\nThe camera is best when used for measurements of a few feet at most. For larger measurements, a small error in calibrating will make a big difference in measuring, so it's recommended to use a different measuring method."/>
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Using Camera: From You" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="One horizontal boundary line will be shown. Use this option to calculate the distance from your phone to what's shown at the boundary line."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_from_you_screenshot" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Using Camera: Length" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Two horizontal boundary lines will be shown. Make sure your camera is facing parallel to the object. Move the boundary lines so the bottom boundary line is at the nearer end of the object and the top boundary line is at the further end of the object. The length of the object will be calculated."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_length_screenshot" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Using Camera: Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Two horizontal boundary lines will be shown. Move the boundary lines so the bottom boundary line is at the bottom of the object and the top boundary line is at the top of the object. The height of the object will be calculated."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_height_screenshot" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measuring Using Camera: Width" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Two vertical boundary lines and one horizontal boundary line will be shown. Make sure your camera is facing perpendicular to the object. Move the horizontal boundary line to the object's position. Move the left and right boundary lines to the left and right ends of the object. The width of the object will be calculated."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/camera_width_screenshot" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measurement Results" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Height is the distance in the vertical direction.\nDepth is the distance in the main direction you were facing when measuring. For most measurements, it's in the direction you were facing when aiming at the first point. For Measure From Two Positions: Free, it's in the direction you moved when you changed positions.\nWidth is the distance in the horizontal direction perpendicular to the Depth.\nLength is the pythagorean combination of Depth and Width (square root of Depth squared plus Width squared). Slant is the pythagorean combination of Length and Height.\n\nThe measurements will always be displayed as positive, except that Height can be negative in Measure From Two Positions Using Both Object Positions. A positive height means the object's first end point you aimed at is higher. A negative height means the second end point is higher." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Fixing The Results" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When measuring from two heights or two positions, you will get more than one measurement (Height, Depth if parallel, Width if perpendicular, Depth and Width if free). If you know the object is not supposed to have that measurement (i.e. a perfectly vertical object shouldn't have Width or Depth, a perfectly horizontal object shouldn't have Height), you can select that check box and click FIX to remove that measurement for more accurate results. This will be calculated by slightly changing the angles used until that measurement becomes 0. A new measurement called Angle Adjustment will appear, which will show how much the Pitch angle had to change to remove the measurement.\n\nBecause Yaw is usually much less accurate than Pitch, Measuring From Two Heights Free and removing Width will just remove the Yaw measurement and show what the results would be if you were measuring Parallel.\n\nIf you use Remove Depth when Measuring From Two Positions Using Both Object Positions, it can be used as another method of measuring Height. See the Steps category for more details." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Steps" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Every time you press or release the ENTER button, the Pitch value (and the Yaw value if you're measuring Free) is saved to be used in the measurement formula, and you advance to the next step. Some steps will tell you to press and immediately release the ENTER button. Some steps will tell you to press the ENTER button, then aim somewhere else, then release. It's okay if you don't memorize all the instructions here. They will be shown on the ENTER button.\n\nEvery odd step is a press, and every even step is a release. For each of those, you'll aim at the odd step, press and hold, aim at the even step while still holding, then release. If an even step is skipped, the odd step before it is a press and release. For each of those, you'll aim at the odd step, press, and release without moving your phone. The following shows where to aim for each step.\n\nMeasure Height:\n    1: Ground Below Object\n    2:\n    3: Bottom Of Object\n    4: Top Of Object\n(If the object is on the ground, you can start at Step 3 as long as you hold for one second before releasing on Step 4.)\n\nMeasure Length Parallel, Hypotenuse, or Free:\n    1: Ground Below End Point 1\n    2:\n    3: End Point 1\n    4: End Point 2\n(If the object is on the ground, you can start at Step 3 as long as you hold for one second before releasing on Step 4.)\n\nMeasure Length Perpendicular:\n    1: Ground Below Perpendicular Point\n    2: Perpendicular Point\n    3: End Point 1\n    4: End Point 2\n(If you're measuring an object on the ground, Step 1 would be a press and release, because the Perpendicular Point and the ground below it would be the same.)\n\nMeasure Two Heights Parallel, Hypotenuse, or Free:\n    (From Eye Height #1)\n    1: End Point 1\n    2: End Point 2\n    (From Eye Height #2)\n    3: End Point 1\n    4: End Point 2\n\nMeasure Two Heights Perpendicular:\n    (From Eye Height #1)\n    1: Perpendicular Point\n    2: \n    3: End Point 1\n    4: End Point 2\n    (From Eye Height #2)\n    5: Perpendicular Point\n    6: \n    7: End Point 1\n    8: End Point 2\n\nMeasure Two Positions Parallel or Perpendicular:\n    (From Position #1)\n    1: End Point 1\n    2: End Point 2\n    (From Position #2)\n    3: End Point 1\n    4: End Point 2\n\nMeasure Two Positions Free:\n    (From Position #1)\n    1: End Point 1\n    2: End Point 2\n    3: Direction to Position #2\n    4:\n    (From Position #2)\n    5: End Point 1\n    6: End Point 2\n\nMeasure From Object Positions:\n    (From Position #1)\n    1: Ground At Position #2\n    2: End Point At Position #2\n    (From Position #2)\n    3: Ground At Position #1\n    4: End Point At Position #1\n\nMeasure From Object Positions, Removing Depth:\n    (From Spectator Position)\n    1: Bottom Of Object\n    2: Top Of Object\n    (From Object's Position)\n    3: Ground At Spectator Position\n    4:\n\n    (OR)\n\n    (From Object's Position)\n    1: Ground At Spectator Position\n    2:\n    (From Spectator Position)\n    3: Bottom Of Object\n    4: Top Of Object"/>
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Avoiding Errors" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Measuring Parallel will always be more accurate than Measuring Perpendicular. Measuring using the Pitch angle only (you specify whether you're Parallel, Perpendicular, Inside, or Outside) will always be more accurate than measuring using the Yaw angle (any measurement labeled as &quot;Free&quot;).\n\nWhen measuring using the magnetic sensors, (anything labeled as &quot;Free&quot;), make sure you're not near any magnets, and make sure you've viewed the Calibrate: Set Precision screen to see if the Yaw is working correctly. Every time you rotate 90°, the Yaw should change by 90°.\n\nWhen aiming, make sure you always wait for the click, and keep the phone still until after pressing or releasing.\n\nFor any measurement method, you must follow all of the steps from the same height and position, unless specifically instructed otherwise.\n\nIf you're too close to the object you're measuring, a slight movement will make a big difference in the measurement. If you're too far, a slight tilt will make a big difference. You should measure from a happy medium. If you have more trouble standing still, you should be further from the object. If you have more trouble keeping your hands still, you should be closer to the object.\n\nIf you're using Measure Length or Measure From Two Positions (except Using Both Object Positions), avoid measuring anything at eye level. A small accidental change in the tilt will make a big error in the measurements." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Ads" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.\n\nIf you have not purchased the Full Version, ads will occasionally appear. Clicking the photo in the ad will open the website that the ad links to. After 5 seconds, you will be able to click the X in the top right corner to close the ad." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Bug Reporting" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="To report bugs (spelling errors, crashes, inaccurate measurements, etc), click Bug Reporting in the Welcome Screen and fill in the fields to send a message to jffitch@mathgeniusguide.com. Please be as specific as possible so the bug can be found and fixed." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Credits" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="This app was created using Android Studio.\n\nThe digital font was created by Jakob Fischer from www.pizzadude.dk." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

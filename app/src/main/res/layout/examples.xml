@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="575dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/titlebar"
+                android:text="Examples" />
+
+            <Button
+                android:id="@+id/close"
+                style="@style/menuNoOnClick"
+                android:text="Back"
+                />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="This screen shows examples of what each measurement method means, to make sure you're using them correctly." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Definitions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="These terms will be used in many of the measurement methods shown here.\n\nGround: The Ground is a surface that's your specified Eye Height #1 below your eyes, and slanted at your specified Incline Angle and Direction. If your specified Incline Angle is 0, then the Ground is a level surface that's your specified Eye Height #1 below your eyes. For Measure Height and Measure Length, make sure the actual ground you're standing on matches that description.\n\nGround Point: For Parallel, Hypotenuse, and Free measurements, the Ground Point is the point on the ground at the position of the object's first end point. You can aim at either end point first, but the Ground Point must be at the position of the end point you aim at first. For Perpendicular Measurements, the Ground Point is the point on the ground at the Perpendicular Point's position.\n\nPerpendicular Point: If you face the object at a direction perpendicular to its length, the Perpendicular Point is the point on the object that you're facing.\n\nPress and Release: If you're told to press and release, then after aiming at the target you'll press the ENTER button and immediately release it.\n\nPress and Hold: If you're told to press and hold, then after aiming at the target you'll press the ENTER button and hold it, then aim at your next target before releasing it.\n\nHeight: Height is the measurement in the vertical direction.\n\nDepth: Depth is the measurement in the horizontal direction from you to the first point that you aimed at. The exception is Measure From Two Positions: Free, in which Depth is the direction of your Stride Distance.\n\nWidth: Width is the horizontal direction perpendicular to Depth.\n\nLength: Length is the pythagorean combination of Depth and Width (Depth² + Width² = Length²).\n\nSlant: Slant is the pythagorean combination of Length and Height."/>
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="If you're measuring a vertical object that is either on the Ground or you know where the Ground is at the object's position, you can use Measure Height.\n\nMake sure you have Eye Height #1 set to the altitude of your eyes relative to the Ground." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_height" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the example shown in the photo, if you're measuring the height of the painting, you'll first aim at the Ground Point and press and release, because the painting is not on the ground. After that, you'll aim at the bottom of the painting and press and hold, then aim at the top of the painting and release.\n\nIf you were instead measuring how high the painting is off the Ground, then the bottom of what your measuring is on the Ground, so you can just aim at the Ground and press and hold, then aim at the bottom of the painting and release. The same is true if you're measuring the height of the ceiling. The bottom of what your measuring is on the Ground, so you can just aim at the Ground and press and hold, then aim at the ceiling and release." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Parallel Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Parallel Inside option if you're measuring the length of an object while you're directly between the object's end points.\n\nMake sure you have Eye Height #1 set to the altitude of your eyes relative to the Ground." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_parallel_inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Because the object is on the ground, you can just aim at one of the end points and press and hold, then aim at the other end point and release. If the object were not on the ground, you'd have to first press and release while aiming at the Ground Point." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Parallel Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Parallel Outside option if you're measuring the length of an object while you're directly facing both of the object's end points.\n\nMake sure you have Eye Height #1 set to the altitude of your eyes relative to the Ground." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_parallel_outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Because the object is on the ground, you can just aim at one of the end points and press and hold, then aim at the other end point and release. If the object were not on the ground, you'd have to first press and release while aiming at the Ground Point." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Hypotenuse option if you're measuring the length of an object while you're directly facing one of the object's end points and the other end point is directly to your side.\n\nMake sure you have Eye Height #1 set to the altitude of your eyes relative to the ground." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_hypotenuse" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Because the object is not on the ground, you'll first aim at the Ground Point and press and release. After that, you'll aim at the first end point and press and hold, then aim at the other end point and release." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the previous examples, you were not using the magnetic sensor, so you told your phone the angle between the direction to the first point and the direction to the second point. Parallel Outside is an angle difference of 0°. Parallel Inside is an angle difference of 180°. Hypotenuse is an angle difference of 90°. Free uses the magnetic sensor to determine the angle difference, which allows you to be at any position relative to the object. You still must be at the specified Eye Height, and you still must first press and release while aiming at the Ground Point if the object is not on the ground." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure Length: Perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Use the Perpendicular option if you're measuring the length of an object while facing perpendicular to the object's length.\n\nMake sure you have Eye Height #1 set to the altitude of your eyes relative to the ground." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="The Ground Point is the point on the ground at the Perpendicular Point's position. You will first aim at the Ground Point (to tell your phone how far away from the object you are) and press and hold, then aim at the Perpendicular Point (to tell your phone how high the object is off the ground) and release. You will then aim at one of the object's end points and press and hold, then aim at the other end point and release.\n\nIf you were instead measuring an object that's on the ground, then the Ground Point would be the same as the Perpendicular Point, so you could just press and release when aiming at the Ground Point.\n\nIn the photo, the Perpendicular Point is between the object's end points, so you'd measure using the Perpendicular Inside method. If you were instead measuring from Point 2 to the flashlight, you would choose Perpendicular Outside because the Perpendicular Point would not be between the end points. If the Perpendicular Point is at one of the end points, then you can choose either Inside or Outside because they'll both give you the same result." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Parallel Outside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="The positions of Parallel Inside, Parallel Outside, Hypotenuse, and Free are exactly the same for Measure From Two Heights as they are for Measure Length.\n\nWhen measuring from Two Heights, it does not matter where the Ground is, so you just aim at both of the object's end points from each eye height. In the example shown, the height of a utility pole is being measured. Eye Height #1 is set to the eye height when standing, and Eye Height #2 is set to the eye height when sitting. If you don't have other tools to use (i.e. a stepstool or a ladder which you know the height of), then those are the recommended eye heights.\n\nWhen measuring from two heights, either one of the object's end points can be aimed at first, but you must pick the same end point to be first for each eye height." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2h_parallel_outside"
+                />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the example shown, you'll stand an aim at the bottom of the utility pole and press, then aim at the top of the utility pole and release. You'll then sit and aim at the same points in the same order. You can also sit first then stand, or aim at the top first then the bottom.\n\n" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Removing Measurements" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Heights or Measure From Two Positions, the result will usually show measurements in multiple dimensions (Parallel measurements will usually show Height and Depth, Perpendicular measurements will usually show Height and Width, Free measurements will usually show all three dimensions). Sometimes, the object you're measuring won't have some of those measurements (a vertical object won't have Depth or Width, a horizontal object won't have Height). For a more accurate measurement, you can remove the unwanted dimensions. Just click on the dimensions that you want to remove, then click FIX." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/removing_measurements"
+                />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the example of measuring the height of a utility pole, you're measuring a vertical object, so you'd expect there to only be a Height measurement and no Depth measurement. This is what the measurement could look like at first." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/two_heights_raw_measurements"
+                />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="This is what the measurements could look like after removing the Depth measurement." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/two_heights_fixed_measurements" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="You'll notice a new measurement called Angle Adjustment. Removing a dimension is done by slightly altering the angles inputted from the aiming (by increments of 0.0001°) until the unwanted dimension is 0. The Angle Adjustment shows how much the angles needed to be altered. The lower the Angle Adjustment, the more accurate the measurement is. You usually want the angle adjustment to be 0.05° or less.\n\nThe Angle Adjustment will never be greater than 10°. If the dimension cannot be removed with an Angle Adjustment of less than 10°, then an error message will be shown and the dimension will not be removed." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Parallel Inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the example shown, the distance between two utility poles is being measured. Like the previous example, Eye Height #1 is set to the eye height when standing, and Eye Height #2 is set to the eye height when sitting." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2h_parallel_inside" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Heights: Parallel Inside or Hypotenuse, you are not given the option to Remove Depth, because it's impossible for there to be no Depth. You have the option to Remove Height if you're measuring something that's perfectly horizontal, but that's probably not the case here because the ground outside is most likely not level, so in this case it's recommended to not Remove Height." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="As with Measure Length, you do not use the magnetic sensor when measuring Parallel Inside, Parallel Outside, or Hypotenuse, so you tell your phone the angle between the direction to the first point and the direction to the second point. Parallel Outside is an angle difference of 0°. Parallel Inside is an angle difference of 180°. Hypotenuse is an angle difference of 90°. Free uses the magnetic sensor to determine the angle difference, which allows you to be at any position relative to the object. You still must be at the specified eye heights." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Heights: Perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the following photo, whether you're measuring from Point 1 to Point 2, Point 2 to Point 3, or Point 1 to Point 3, you'll use Measure From Two Heights: Perpendicular. From each eye height, you'll aim at three points, which are the Perpendicular Point first (press and release) and then the two ends of the object (press at one end, release at the other). The Perpendicular Point can be anywhere on the Perpendicular Line shown, but you must use the same Perpendicular Point from each eye height." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2h_perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Heights: Perpendicular, you are not given the option to Remove Width, because it's impossible for there to be no Width. You have the option to Remove Height if you're measuring something that's perfectly horizontal. In this case, if you're measuring the Width of the roof (from Point 1 to Point 2), you can Remove Height.\n\nIf you're measuring from Point 1 to Point 2 or from Point 2 to Point 3, you'll use Perpendicular Inside, because the Perpendicular Line is between the two points. If you're measuring from Point 1 to Point 3, you'll use Perpendicular Outside. If one of the object's end points is on the Perpendicular Line (in the photo, if you were measuring from the edge of the window to the corner of the roof), you can use wither Inside or Outside." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Parallel" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Measuring From Two Positions is just like Measuring From Two Heights except that you change your position instead of your eye height. The distance you move between positions is your Stride Distance. The following photo shows how to measure the distance between two utility poles from two positions." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2p_parallel" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Positions: Parallel or Perpendicular, your stride must be toward or away from the object's first end point.\n\nWhen using Measure From Two Positions: Parallel, you can be either inside or outside, but the positions must be either both inside or both outside. " />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Perpendicular" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Positions: Perpendicular, you must be facing one of the object's end points at a direction perpendicular to the object's length, and you must aim at that point first. In the following photo, from each position, you must aim first at Point 1 (press and hold) then at Point 2 (release). The distance you move between positions is your Stride Distance. " />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2p_perpendicular" />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Positions: Free, you can be at any position and your stride can be in any direction. After aiming at both of the object's end points, you'll aim in the direction of your stride to tell your phone which direction you're moving, then aim at both of the object's end points from your second position. The distance you move between positions is your Stride Distance. "/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_2p_free" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="In the example shown in the photo, start at Position 1. Aim at Point 1 and press and hold, then aim at Point 2 (2A if you just want the distance, 2B if you also want the height) and release. Then, aim at any height in the Stride Direction (the direction from Position 1 to Position 2), press and release, and move to Position 2. Then, do the same as what you did from Position 1. Aim at Point 1, press and hold, aim at Point 2, release." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Object Positions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="When using Measure From Two Positions: Object Positions, you aim from the position of the second point at the Ground and at the object's first end point, then you aim from the position of the first point at the Ground and at the object's second end point.\n\nIn this example, you're measuring the distance between two utility poles."/>
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_object_positions" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="If you're measuring the distance at a point other than the ground (such as the wires in the photo, or the tops of the utility poles work too), you'll stand on Ground 1 and aim at Ground 2 and press and hold, then aim at Object Point 2 and release, then stand on Ground 2 and aim at Ground 1 and press and hold, then aim at Object Point 1 and release. The Height measurement will be the difference between the altitudes at the Object Heights, and the Depth is the distance between the utility poles.\n\nIf you're measuring the distance on the ground, then you'll press and release instead of press and hold, because the Object Point and the Ground are the same. You'll stand on Ground 1 and aim at Ground 2 and press and release, then stand on Ground 2 and aim at Ground 1 and press and release.\n\nUnlike other examples of Measure From Two Positions, the Object Positions position setting does not require the two positions to be separated by your Stride Distance. Also unlike other examples of Measure From Two Positions, you must have your Eye Height #1 set.\n\nThe Ground is defined as your Eye Height #1 below your eyes when you're at that position. If your Eye Height #1 is set to your eye height when standing, then the ground is whatever you are standing on. If you want to measure from the bottom of an object, you can stand at the height that the bottom of the object is at.\n\nUnlike most measurements, Measure From Two Positions: Object Positions can give a negative Height result. A positive Height means the first object you aimed at is higher. A negative Height means the first object you aimed at is lower." />
+
+            <TextView
+                style="@style/instructionsBold"
+                android:text="Measure From Two Positions: Object Positions Removing Depth" />
+
+            <TextView
+                style="@style/instructionsNormal"
+                android:text="Using Measure From Two Positions: Object Positions and clicking Remove Depth can be another way to measure the height of an object. Choose a location to be your Spectator Position. From the Spectator Position, you'll aim at the Bottom of the object an press and hold, then aim at the Top of the object and release. From the object's position (with your eyes at Eye Height #1 above the bottom of the object), you'll aim at the Spectator Position and press and release. You may start at either the object's position or the Spectator Position. Be sure to click Remove Depth after measuring." />
+
+            <ImageView
+                style="@style/standardImage"
+                android:src="@drawable/aiming_object_positions_remove_depth" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

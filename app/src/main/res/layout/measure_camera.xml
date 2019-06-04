@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context="com.mathgeniusguide.tapemeasure.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="575dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titlebar"
+            android:layout_alignParentTop="true"
+            android:text="Measuring\nUsing Camera"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/menu"
+            android:layout_below="@id/title"
+            android:text="Back" />
+
+        <LinearLayout
+            android:id="@+id/cameraMeasureResult"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/back"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_height="30dp"
+                android:layout_width="140dp"
+                android:id="@+id/cameraSpinner"
+                />
+            <TextView
+                android:id="@+id/heightfoot"
+                style="@style/measureDisplayRed"
+                android:layout_width="65dp"
+                android:layout_marginRight="5dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/footlabelh"
+                style="@style/measureDisplay"
+                android:layout_width="wrap_content"
+                android:text="ft" />
+
+            <TextView
+                android:id="@+id/heightinch"
+                style="@style/measureDisplayRed"
+                android:layout_width="80dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0" />
+
+            <TextView
+                android:id="@+id/inchlabelh"
+                style="@style/measureDisplay"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="in" />
+
+        </LinearLayout>
+
+        <TextureView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cameraMeasureResult"
+            android:layout_margin="25dp"/>
+
+        <ImageView
+            android:id="@+id/cameraTop"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp"
+            android:scaleY="1"
+            android:layout_below="@id/cameraMeasureResult"
+            android:src="@drawable/horizontal_marker"/>
+        <ImageView
+            android:id="@+id/cameraBottom"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:scaleY="1"
+            android:layout_below="@id/cameraMeasureResult"
+            android:layout_marginTop="315dp"
+            android:src="@drawable/horizontal_marker"/>
+        <ImageView
+            android:id="@+id/cameraLeft"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:scaleX="1"
+            android:layout_below="@id/cameraMeasureResult"
+            android:src="@drawable/vertical_marker"/>
+        <ImageView
+            android:id="@+id/cameraRight"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="320dp"
+            android:scaleX="1"
+            android:layout_below="@id/cameraMeasureResult"
+            android:src="@drawable/vertical_marker"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
